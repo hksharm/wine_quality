@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Result</title>
+</head>
+<body>
+	<!-- Website Title -->
+	<div>
+		<h2><span>Wine Quality</span></h2>
+		<div>
+			
+		</div>
+	</div>
+
+	<!-- Result -->
+	<div>
+		{% if prediction==2 %}
+			<h1>Prediction: <span class='Good Quality'>This is a GOOD Quality Wine.</span></h1>
+			
+		{% elif prediction==1 %}
+			<h1>Prediction: <span class='Bad Quality'>Wait! You Wine has Bad Quality.</span></h1>
+		{% elif prediction==0 %}
+			<h1>Prediction: <span class="Average Quality">Your Wine has Average Quality</span></h1>	
+		{% endif %}
+	</div>
+
+	
+   
+</body>
+</html>
